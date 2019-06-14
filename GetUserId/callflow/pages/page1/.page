@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@978290022:1560526216288" name="page1" version="6.0.1">
+<element height="46" id="Element@1728573634:1560526216288" name="Start Of Call" start_of_call="true" type="Page Entry" width="113" x="230" y="30">
+<exit_states>
+<exit_state name="next" target="Element@904335860:1560526222570"/>
+</exit_states>
+</element>
+<element height="46" id="Element@904335860:1560526222570" name="CVP Subdialog Start" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="155" x="209" y="123">
+<exit_states>
+<exit_state name="done" target="Element@711848708:1560526251492"/>
+</exit_states>
+</element>
+<element height="46" id="Element@696343746:1560526227898" name="success return" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="125" x="224" y="475">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="46" id="Element@711848708:1560526251492" name="greeting" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="101" x="236" y="217">
+<exit_states>
+<exit_state name="done" target="Element@1091561848:1560526342947"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1091561848:1560526342947" name="get user ID" src="com.audium.server.voiceElement.digit.MBasicDigit" type="Voice Element" width="106" x="234" y="325">
+<exit_states>
+<exit_state name="done" target="Element@696343746:1560526227898"/>
+<exit_state name="max_nomatch" target="Element@210360749:1560526966209"/>
+<exit_state name="max_noinput" target="Element@210360749:1560526966209">
+<bendpoint>
+<dim1 x="161" y="-40"/>
+<dim2 x="-77" y="-40"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@210360749:1560526966209" name="error" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="99" x="476" y="325">
+<exit_states>
+<exit_state name="done" target="Element@129293676:1560527073700"/>
+</exit_states>
+</element>
+<element height="46" id="Element@129293676:1560527073700" name="error return" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="110" x="471" y="475">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+</page>

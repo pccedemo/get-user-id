@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subdialog_return id="Element@696343746:1560526227898" name="success return" version="6.0.1">
+<config>
+<settings>
+<setting name="caller_input">{Data.Element.get user ID.value}</setting>
+<setting name="FromExtVXML0"/>
+<setting name="FromExtVXML1"/>
+<setting name="FromExtVXML2"/>
+<setting name="FromExtVXML3"/>
+</settings>
+</config>
+</subdialog_return>
